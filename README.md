@@ -44,13 +44,6 @@ Options:
   ```
   https://smart-bookmark.vercel.app/?q=%s
   ```
-
-### Firefox
-1. Open **Preferences → Search → Add shortcut**
-2. Fill in:
-   - **Keyword:** `sb`  
-   - **URL:** `https://smart-bookmark.vercel.app/?q=%s`
-
 ---
 
 ## 🧩 Supported Aliases
@@ -91,14 +84,11 @@ Redeploy → Done 🎉
 
 ## ❓ FAQ
 
-**Q: Can I add new commands without editing the code?**  
-A: Not yet. Right now, you add commands by editing `main.py` and redeploying.  
-
 **Q: Does this collect or track searches?**  
 A: No. It just redirects to the target site.  
 
 **Q: Do I have to make it my default search engine?**  
 A: Nope — you can set it up as a keyword (`sb`) and only use it when you want.  
 
-**Q: Can I run it locally instead of deploying?**  
-A: Yes! Just run `uvicorn main:app --reload` and point your browser to `http://localhost:8000/?q=g test`.  
+**Q: How do I add my own commands?**  
+A: Fork this repo, edit `main.py` (the `searchKeys` dictionary), then redeploy to your own hosting.
